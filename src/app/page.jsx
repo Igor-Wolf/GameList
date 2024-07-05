@@ -53,6 +53,12 @@ export default function Home() {
     
   }
 
+  const handlePrevGame = () => {
+    
+    chosenGame.id === 1 ? setChosenGame(data[data.length - 1]) : setChosenGame(data[chosenGame.id - 2])    
+    
+  }
+
 
 
   // Renderiza a página apenas quando os dados estiverem carregados
@@ -67,7 +73,7 @@ export default function Home() {
         <BGVideo />
         <ContentContainer>
           {data && <MenuLeft jogos={data} onButtonClick={handleChildClick} />} {/* Renderiza MenuLeft somente se data estiver carregado */}
-          {data && <MenuRight chosenGame={chosenGame} onButtonClick={handleNextGame} />}
+          {data && <MenuRight chosenGame={chosenGame} onButtonClick={handleNextGame} onButtonClick2={handlePrevGame} />}
           
         </ContentContainer>
       </InternalContainer>

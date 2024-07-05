@@ -25,7 +25,7 @@ import { Button } from '../Button';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { useRouter } from 'next/navigation';
 
-const MenuRight = ({ chosenGame, onButtonClick }) => {
+const MenuRight = ({ chosenGame, onButtonClick, onButtonClick2 }) => {
   const router = useRouter();
 
   const handleClickCode = () => {
@@ -40,6 +40,10 @@ const MenuRight = ({ chosenGame, onButtonClick }) => {
     onButtonClick();
   };
 
+  const handleClickPrev = () => {
+    onButtonClick2();
+  };
+
   const [swiperStyle, setSwiperStyle] = useState({ width: '400px', height: '300px' });
 
   useEffect(() => {
@@ -49,8 +53,6 @@ const MenuRight = ({ chosenGame, onButtonClick }) => {
         setSwiperStyle({ width: '280px', height: '180px' });
       } else if (screenWidth <= 600) {
         setSwiperStyle({ width: '300px', height: '200px' });
-      } else if (screenWidth <= 900) {
-        setSwiperStyle({ width: '350px', height: '250px' });
       } else {
         setSwiperStyle({ width: '400px', height: '300px' });
       }
@@ -100,6 +102,9 @@ const MenuRight = ({ chosenGame, onButtonClick }) => {
           </Button>
           <Button title={"Play"} variant='secondary' onClick={handleClickPlay}>
             <i className="bi bi-play-fill"></i>
+          </Button>
+          <Button title={"Prev "} variant='secondary' onClick={handleClickPrev}>
+          <i class="bi bi-skip-backward-fill"></i>
           </Button>
           <Button title={"Next "} variant='secondary' onClick={handleClickNext}>
             <i className="bi bi-skip-forward-fill"></i>

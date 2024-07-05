@@ -169,7 +169,7 @@ export const ImageBox = styled.img`
     object-fit: cover;
     border-radius: 1rem;
 
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
         width: 300px;
         height:200px;
     
