@@ -19,9 +19,9 @@
         "platform": "Desktop",
         "language": "Unity, C#",      
         "code": "https://github.com/Igor-Wolf/Meu-Primeiro-Jogo-FPS",
-        "play": "https://play.unity.com/mg/fps/webgl-builds-380714",
+        "play": "https://faker-zero.itch.io/my-first-fps",
         "releaseDate": "29/11/23",
-        "preview": ["../images/myfirstfps/1.png" ]
+        "preview": ["../images/myfirstfps/1.png", "../images/myfirstfps/2.png", "../images/myfirstfps/3.png", "../images/myfirstfps/4.png", "../images/myfirstfps/5.png" ]
       },{
         "id": 3,
         "title": "Jogo Yu-Gi-Oh!",
