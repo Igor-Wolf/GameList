@@ -1,0 +1,155 @@
+[
+    {
+      "id": 1,
+      "title": "Horde Hunters",
+      "description": "Protótipo de um jogo rouguelike no qual o jogador deverá sobreviver à hordas de inimigos, inspirado em Vapire Survivors e Brotato. Compátivel com gamepad e teclado.",
+      "genre": "Fantasia, Sobrevivência, Indie, 2d",
+      "platform": "Desktop",
+      "language": "Godot 4",      
+      "code": "https://github.com/Igor-Wolf/HordeHunters",
+      "play": "https://faker-zero.itch.io/horde-hunters",
+      "releaseDate": "13/06/24",
+      "preview": ["../images/hodehunters/1.png", "../images/hodehunters/2.png","../images/hodehunters/3.png" ]
+    },
+    {
+        "id": 2,
+        "title": "My first FPS",
+        "description": "Literalmente o meu primeiro protótipo de FPS desenvolvido na Unity. Nele o jogador pode experienciar um ambiente futurista no qual deverá sobreviver à revolução das máquinas para progredir nas fases",
+        "genre": "Ação, Shooter, FPS",
+        "platform": "Desktop",
+        "language": "Unity, C#",      
+        "code": "https://github.com/Igor-Wolf/Meu-Primeiro-Jogo-FPS",
+        "play": "https://play.unity.com/mg/fps/webgl-builds-380714",
+        "releaseDate": "29/11/23",
+        "preview": ["../images/myfirstfps/1.png" ]
+      },{
+        "id": 3,
+        "title": "Jogo Yu-Gi-Oh!",
+        "description": "Um jogo estilo point and click no qual o jogador deverá jogar um jogo de pedra, papel e tesoura com temática do Yu-Gi-Oh. Possui contagem de score ambientação relacionada Forbindem Memories de PS1",
+        "genre": "Card Game, Arcade",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Jogo-Yu-Gi-Oh-",
+        "play": "https://igor-wolf.github.io/Jogo-Yu-Gi-Oh-/",
+        "releaseDate": "16/11/23",
+        "preview": ["../images/yugioh/1.png", "../images/yugioh/2.png","../images/yugioh/3.png" ]
+      },{
+        "id": 4,
+        "title": "Jogo da Memoria",
+        "description": "Um jogo estilo point and click no qual o jogador deverá tentar achar pares de cartas iguais, no tipico estilo de jogo da memória",
+        "genre": "Card Game, Arcade",
+        "platform": "Desktop, Mobile",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Jogo-da-Memoria",
+        "play": "https://igor-wolf.github.io/Jogo-da-Memoria/",
+        "releaseDate": "10/11/23",
+        "preview": ["../images/jogodamemoria/1.png","../images/jogodamemoria/2.png" ]
+      },{
+        "id": 5,
+        "title": "Simulador de Teclado",
+        "description": "Um simulador estilo point and click no qual o jogador poderá simular/tocar notas de um piano. Aceita comandos tanto por keyboard quanto por click",
+        "genre": "Musical, Simulação",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Simulador-de-Teclado",
+        "play": "https://igor-wolf.github.io/Simulador-de-Teclado/",
+        "releaseDate": "11/11/23",
+        "preview": ["../images//piano/1.png", "../images//piano/2.png" ]
+      },{
+        "id": 6,
+        "title": "Jogo do Detona Ralph",
+        "description": "Um jogo estilo point and click no qual um inimigo aparece na tela e na medida que acertamos os cliques ganhamos pontuação. Possui três levels para testar as habilidades do jogador tornando a jogatina mais desafiadora.",
+        "genre": "Arcade",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Jogo-do-Detona-Ralph/tree/Desenvolvimento",
+        "play": "https://igor-wolf.github.io/Jogo-do-Detona-Ralph/",
+        "releaseDate": "09/11/23",
+        "preview": ["../images/detonaRalph/1.png" ]
+      },{
+        "id": 7,
+        "title": "Jogo da Velha",
+        "description": "Um jogo estilo point and click no qual o jogador deverá jogar um jogo da velha. Não há comportamento de IA então são necessários 2 jogadores",
+        "genre": "Arcade, Multiplayer",
+        "platform": "Desktop, Mobile",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Jogo-da-Velha",
+        "play": "https://igor-wolf.github.io/Jogo-da-Velha/",
+        "releaseDate": "23/03/24",
+        "preview": ["../images/jogodavelha/1.png", "../images/jogodavelha/2.png" ]
+      },{
+        "id": 8,
+        "title": "Jogo Dinossauro Google",
+        "description": "Um jogo estilo point and click no qual o jogador deverá tentar sobreviver pulando obstaculos, com a tecla espaço enquanto a fase se desenvolve",
+        "genre": "Arcade",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/Jogo-DinossauroGoogle",
+        "play": "https://igor-wolf.github.io/Jogo-DinossauroGoogle/",
+        "releaseDate": "23/03/24",
+        "preview": ["../images/dinossauroGoogle/1.png" ]
+      },
+      {
+        "id": 9,
+        "title": "Jogo Genius",
+        "description": "Um jogo estilo point and click no qual o jogador deverá acertar uma sequencia estilo jogo Genuis",
+        "genre": "Arcade, Puzzle",
+        "platform": "Desktop, Mobile",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/JogoGenius",
+        "play": "https://igor-wolf.github.io/JogoGenius/",
+        "releaseDate": "23/03/24",
+        "preview": ["../images/jogoGenius/1.png", "../images/jogoGenius/2.png" ]
+      },
+      {
+        "id": 10,
+        "title": "Jogo Resgate",
+        "description": "Um jogo estilo space shooter no qual o jogador deverá destruir alguns obstaculos enquanto tenta resgatar a maior quantidade de pessoas possível",
+        "genre": "Arcade",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript, Jquery",      
+        "code": "https://github.com/Igor-Wolf/JogoResgate",
+        "play": "https://igor-wolf.github.io/JogoResgate/",
+        "releaseDate": "26/03/24",
+        "preview": ["../images/jogoresgate/1.png" ]
+      },
+      {
+        "id": 11,
+        "title": "RollDices",
+        "description": "Um jogo de rolar dados, sendo mais um utilitário que um jogo em si. Util em diversas ocasiões",
+        "genre": "Arcade, RPG",
+        "platform": "Desktop, Mobile",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/RollDices",
+        "play": "https://igor-wolf.github.io/RollDices/",
+        "releaseDate": "27/03/24",
+        "preview": ["../images/rolldices/1.png" , "../images/rolldices/2.png" ]
+      },
+      {
+        "id": 12,
+        "title": "Jogo Aliens",
+        "description": "Um jogo estilo space shooter no qual o jogador deverá atirar em aliens",
+        "genre": "Arcade, Shooter",
+        "platform": "Desktop",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/JogoAliens",
+        "play": "https://igor-wolf.github.io/RollDices/",
+        "releaseDate": "26/03/24",
+        "preview": ["../images/jogoAliens/1.png" ]
+      },
+      {
+        "id": 13,
+        "title": "Snake Game",
+        "description": "Um jogo da cobrinha semelhante ao de celulares antigos. Possui controles tanto no keyboard quanto no mouse através dos botões",
+        "genre": "Arcade",
+        "platform": "Desktop, Mobile",
+        "language": "HTML, CSS, Javascript",      
+        "code": "https://github.com/Igor-Wolf/SnakeGame",
+        "play": "https://igor-wolf.github.io/SnakeGame/",
+        "releaseDate": "07/04/24",
+        "preview": ["../images/snakegame/1.png" ]
+      }
+
+    
+  ]
+  
