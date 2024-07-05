@@ -9,7 +9,8 @@ import {
   PlatformInfo,
   Category,
   Language,
-  ReleaseDate
+  ReleaseDate,
+  ButtonsContainer
 } from './styles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -19,9 +20,38 @@ import 'swiper/css/scrollbar';
 
 // Import Swiper modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Button } from '../Button';
 
-const MenuRight = ({ chosenGame }) => {
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
+import { useRouter } from 'next/navigation';
+
+const MenuRight = ({ chosenGame , onButtonClick}) => {
   console.log(chosenGame)
+  const router = useRouter();
+
+  const handleClickCode = () => {
+
+    router.push(chosenGame.code)
+
+
+  }
+
+  const handleClickPlay = () => {
+
+    router.push(chosenGame.play)
+
+
+  }
+
+  const handleClickNext = () => {
+
+
+    onButtonClick()
+
+
+  }
+
   return (
     <Container>
       <GameInfo>
@@ -54,7 +84,11 @@ const MenuRight = ({ chosenGame }) => {
     </SwiperSlide>
   ))}
 </Swiper>
-
+        <ButtonsContainer>
+          <Button title={"Code"} variant='secondary' onClick={handleClickCode}> <i class="bi bi-stop-fill"></i></Button>
+          <Button title={"Play"} variant='secondary' onClick={handleClickPlay}><i class="bi bi-play-fill"></i></Button>
+          <Button title={"Next "} variant='secondary'onClick={handleClickNext}><i class="bi bi-skip-forward-fill"></i></Button>
+    </ButtonsContainer>
       </ImageCarrosel>
     </Container>
   );

@@ -26,6 +26,7 @@ export const ImageCarrosel = styled.div`
 
     display:flex;
     flex-direction: column;
+    gap: 1rem;
     
     
 
@@ -38,7 +39,7 @@ export const GameInfo = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 1rem;
+    gap: 1.5rem;
 
     height:500px;
     width:600px;
@@ -118,4 +119,14 @@ export const ImageBox = styled.img`
     height:300px;
     object-fit: cover;
     border-radius: 1rem;
+`
+
+export const ButtonsContainer = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+
 `

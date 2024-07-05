@@ -5,6 +5,7 @@ import {
     TitleInfo,
     Description,
     GameItem,
+    GameItemTitle
     
 } from './styles';
 
@@ -22,12 +23,12 @@ const MenuLeft = ({ jogos, onButtonClick } ) => {
         <Container>
             <TitleInfo>Games</TitleInfo>
             <ScrollContainer>
-                <GameItem>
+                <GameItemTitle>
                     <Description>Id</Description>
                     <Description>Nome</Description>
                     <Description>Data Build</Description>
 
-                </GameItem>
+                </GameItemTitle>
                 {jogos.map((jogo, index) => (
                     
                     <GameItem onClick={() => handleClick(jogo)} key={index}>

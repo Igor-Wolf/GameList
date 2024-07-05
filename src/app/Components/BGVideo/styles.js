@@ -10,7 +10,7 @@ export const VideoBG = styled.video`
     width: auto;
     height: auto;
     z-index: -2; /* Para garantir que o vídeo fique no fundo */
-    background-color: red;
+    
         
 
 

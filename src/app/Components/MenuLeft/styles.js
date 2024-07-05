@@ -39,6 +39,26 @@ export const GameItem = styled.div`
     margin: 0.5rem;
     padding: 0.5rem;
 
+    &:hover {
+        opacity: 0.6;
+        cursor: pointer;
+        background-color: #747825;
+        
+    }
+
+
+`
+export const GameItemTitle = styled.div`
+
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5); /* 50% transparente */
+    margin: 0.5rem;
+    padding: 0.5rem;
+
 
 `
 
