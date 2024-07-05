@@ -11,6 +11,14 @@ export const ExternalContainer = styled.div`
     
 
 
+    @media (max-width: 1550px) {
+    height: auto;
+    
+    max-width: 100%
+  } 
+    
+
+
 
 `
 
@@ -33,5 +41,12 @@ export const ContentContainer = styled.div`
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    @media (max-width: 1550px) {
+    display:flex;
+    flex-direction: column-reverse;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  } 
 
 `

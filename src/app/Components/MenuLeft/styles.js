@@ -15,6 +15,14 @@ export const Container = styled.div`
     border-radius: 1rem;
     gap: 1rem;
 
+
+
+    @media (max-width: 800px) {
+    display: none;
+  } 
+
+
+
 `
 
 export const ScrollContainer = styled.div`

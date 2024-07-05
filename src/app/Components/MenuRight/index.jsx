@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Container,
   GameInfo,
@@ -23,34 +23,46 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Button } from '../Button';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
 import { useRouter } from 'next/navigation';
 
-const MenuRight = ({ chosenGame , onButtonClick}) => {
-  console.log(chosenGame)
+const MenuRight = ({ chosenGame, onButtonClick }) => {
   const router = useRouter();
 
   const handleClickCode = () => {
-
-    router.push(chosenGame.code)
-
-
-  }
+    router.push(chosenGame.code);
+  };
 
   const handleClickPlay = () => {
-
-    router.push(chosenGame.play)
-
-
-  }
+    router.push(chosenGame.play);
+  };
 
   const handleClickNext = () => {
+    onButtonClick();
+  };
 
+  const [swiperStyle, setSwiperStyle] = useState({ width: '400px', height: '300px' });
 
-    onButtonClick()
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 400) {
+        setSwiperStyle({ width: '280px', height: '180px' });
+      } else if (screenWidth <= 600) {
+        setSwiperStyle({ width: '300px', height: '200px' });
+      } else if (screenWidth <= 900) {
+        setSwiperStyle({ width: '350px', height: '250px' });
+      } else {
+        setSwiperStyle({ width: '400px', height: '300px' });
+      }
+    };
 
+    handleResize(); // Set initial size
+    window.addEventListener('resize', handleResize);
 
-  }
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <Container>
@@ -63,32 +75,36 @@ const MenuRight = ({ chosenGame , onButtonClick}) => {
         <Language><strong>Linguagem:</strong> {chosenGame.language}</Language>
       </GameInfo>
       <ImageCarrosel>
-      <Swiper
-  modules={[Navigation, Pagination, Scrollbar, A11y]}
-  className="mySwiper"
-  navigation={true}
-  spaceBetween={10}
-  slidesPerView={1}
-  scrollbar={{ draggable: true }}
-  loop={true}
-  style={{
-    width: '400px',
-    height: '300px',
-    borderRadius: "1rem",
-    
-  }}
->
-  {chosenGame.preview.map((link, index) => (
-    <SwiperSlide key={index}>
-      <ImageBox src={link} alt={`Image ${index}`} />
-    </SwiperSlide>
-  ))}
-</Swiper>
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          className="mySwiper"
+          navigation={true}
+          spaceBetween={10}
+          slidesPerView={1}
+          scrollbar={{ draggable: true }}
+          loop={true}
+          style={{
+            ...swiperStyle,
+            borderRadius: "1rem",
+          }}
+        >
+          {chosenGame.preview.map((link, index) => (
+            <SwiperSlide key={index}>
+              <ImageBox src={link} alt={`Image ${index}`} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
         <ButtonsContainer>
-          <Button title={"Code"} variant='secondary' onClick={handleClickCode}> <i class="bi bi-stop-fill"></i></Button>
-          <Button title={"Play"} variant='secondary' onClick={handleClickPlay}><i class="bi bi-play-fill"></i></Button>
-          <Button title={"Next "} variant='secondary'onClick={handleClickNext}><i class="bi bi-skip-forward-fill"></i></Button>
-    </ButtonsContainer>
+          <Button title={"Code"} variant='secondary' onClick={handleClickCode}>
+            <i className="bi bi-stop-fill"></i>
+          </Button>
+          <Button title={"Play"} variant='secondary' onClick={handleClickPlay}>
+            <i className="bi bi-play-fill"></i>
+          </Button>
+          <Button title={"Next "} variant='secondary' onClick={handleClickNext}>
+            <i className="bi bi-skip-forward-fill"></i>
+          </Button>
+        </ButtonsContainer>
       </ImageCarrosel>
     </Container>
   );

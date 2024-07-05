@@ -16,6 +16,26 @@ export const Container = styled.div`
     padding: 1rem;
     border-radius: 1rem;
     gap: 1rem;
+
+
+    @media (max-width: 800px) {
+    flex-direction: column-reverse;
+
+    height: auto;
+    min-height: auto;
+
+    width: 90vw;
+    min-width: auto;
+
+
+
+
+  } 
+
+  @media (max-width: 400px) {
+
+    width: 100vw;
+  }
     
 
 
@@ -27,6 +47,21 @@ export const ImageCarrosel = styled.div`
     display:flex;
     flex-direction: column;
     gap: 1rem;
+
+    @media (max-width: 500px) {
+    
+    align-items:center;
+    justify-content: center;
+    height: auto;
+    min-height: auto;
+
+    width: 100vw;
+    min-width: auto;
+
+
+
+
+  } 
     
     
 
@@ -43,6 +78,20 @@ export const GameInfo = styled.div`
 
     height:500px;
     width:600px;
+
+    @media (max-width: 800px) {
+    
+
+    height: auto;
+    min-height: auto;
+
+    width: 80vw;
+    min-width: auto;
+
+
+
+
+  } 
 
 `
 
@@ -119,6 +168,12 @@ export const ImageBox = styled.img`
     height:300px;
     object-fit: cover;
     border-radius: 1rem;
+
+    @media (max-width: 800px) {
+        width: 300px;
+        height:200px;
+    
+    }
 `
 
 export const ButtonsContainer = styled.div`
@@ -128,5 +183,15 @@ export const ButtonsContainer = styled.div`
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 600px) {
+    
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+
+
+
+  } 
 
 `
