@@ -13,6 +13,12 @@ export const ButtonContainer = styled.button`
     width: 80%;
     font-size: 1rem;
     font-weight: 500;
+
+    @media (max-width: 450px) {  
+
+        min-width: 100px;
+        
+    }
     
 
 
