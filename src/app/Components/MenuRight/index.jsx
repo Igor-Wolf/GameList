@@ -10,7 +10,9 @@ import {
   Category,
   Language,
   ReleaseDate,
-  ButtonsContainer
+  ButtonsContainer,
+  BtnLeft,
+  BtnRight
 } from './styles';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -97,18 +99,26 @@ const MenuRight = ({ chosenGame, onButtonClick, onButtonClick2 }) => {
           ))}
         </Swiper>
         <ButtonsContainer>
-          <Button title={"Code"} variant='secondary' onClick={handleClickCode}>
-            <i className="bi bi-stop-fill"></i>
-          </Button>
-          <Button title={"Play"} variant='secondary' onClick={handleClickPlay}>
-            <i className="bi bi-play-fill"></i>
-          </Button>
-          <Button title={"Prev "} variant='secondary' onClick={handleClickPrev}>
-          <i class="bi bi-skip-backward-fill"></i>
-          </Button>
-          <Button title={"Next "} variant='secondary' onClick={handleClickNext}>
-            <i className="bi bi-skip-forward-fill"></i>
-          </Button>
+          <BtnLeft>
+              <Button title={"Code"} variant='secondary' onClick={handleClickCode}>
+                <i className="bi bi-stop-fill"></i>
+              </Button>
+              <Button title={"Play"} variant='secondary' onClick={handleClickPlay}>
+                <i className="bi bi-play-fill"></i>
+              </Button>
+
+          </BtnLeft>
+          <BtnRight>
+
+              <Button title={"Prev "} variant='secondary' onClick={handleClickPrev}>
+              <i class="bi bi-skip-backward-fill"></i>
+              </Button>
+              <Button title={"Next "} variant='secondary' onClick={handleClickNext}>
+                <i className="bi bi-skip-forward-fill"></i>
+              </Button>
+
+          </BtnRight>
+          
         </ButtonsContainer>
       </ImageCarrosel>
     </Container>

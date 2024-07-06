@@ -195,3 +195,32 @@ export const ButtonsContainer = styled.div`
   } 
 
 `
+
+export const BtnLeft = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 450px) {  
+
+      gap: 2rem;
+    justify-content: space-around;
+    }
+
+`
+export const BtnRight = styled.div`
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 450px) {  
+
+    gap: 2rem;
+    justify-content: space-around;
+    }
+
+`
